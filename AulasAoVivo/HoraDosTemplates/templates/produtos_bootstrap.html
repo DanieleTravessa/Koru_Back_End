@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <title>PRODUTOS</title>
+
+        <!-- BootStrap CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+        <!--Comando Python/Flask entre chaves duplas indica a criação de uma variável do BackEnd-->
+    </head>
+    <body>
+        <div class="container mt-5 custom-cointainer">
+            <!--O uso de porcentagem entre chaves indica que será executado um comando do BackEnd dentro do Front-->
+            {% for id, produto in produtos.items() %}
+            <div class="row mb-4">
+            <div class="col-md-4">
+                <img src="{{ produto['imagem'] }}" alt="{{ produto['descricao'] }}" class="img-fluid">
+            </div>
+            <div class="col-md=8">
+                <h1>{{ produto['nome'] }}</h1>
+                <p>{{ produto['preco'] }}</p>
+                <p>{{ produto['descricao'] }}</p>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }} "></script>
+    </body>
+</html>
