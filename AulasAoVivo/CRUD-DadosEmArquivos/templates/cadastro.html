@@ -1,0 +1,46 @@
+<!-- O arquivo base.html deve ser renderizado antes do restante do conteúdo. -->
+{% extends 'base.html' %}
+<!-- Este Template corresponde a página que o usuário acessa para cadastrar um novo produto ou editar um produto existente -->
+    
+<!-- Block content indica que o conteúdo deve ser injetado na página base.html -->
+{% block content %}
+
+    <h1>Cadastro de Produtos</h1>
+        <form method="POST" enctype='multipart/form-data' action="" class="needs-validator">
+            <div class="form-group">
+                <label for="id">ID:</label>
+                <input type="number" class="form-control" id="id" name="id" value=" {{ id }}" required>
+                <div class="invalid-feedback">Campo obrigatório.</div>
+            </div>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" value=" {{ nome }}" required>
+                <div class="invalid-feedback">Campo Obrigatório.</div>
+            </div>
+            <div class="form-group">
+                <label for="preco">Preço:</label>
+                <input type="number" class="form-control" id="preco" name="preco" value=" {{ preco }}" required>
+                <div class="invalid-feedback">Campo obrigatório.</div>
+            </div>
+            <div class="form-group">
+                <label for="descricao">Descrição:</label>
+                <input type="text" class="form-control" id="descricao" name="descricao" value=" {{ descricao }}">
+                <div class="invalid-feedback">Campo Obrigatório.</div>
+            </div>
+            <div class="form-group">
+                <label for="imagem">Imagem:</label>
+                <input type="text" class="form-control" id="imagem" name="imagem" value=" {{ imagem }}">
+
+                {% if imagem %}
+                <img src=" {{ url_for('static', filename='img/' + imagem)}}" style="max-width: 200px; max-height: 200px;">
+                {% endif %}
+            </div>
+
+            <input type="submit" class="btn btn-primary" name="salvar" value="salvar">
+            <a href="#" class="btn btn-secondary">Cancelar</a>
+            
+            <input type="submit" class="btn btn-danger" name="excluir" value="excluir">
+
+        </form>
+
+{% endblock %}

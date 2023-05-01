@@ -12,3 +12,5 @@ Objetivo final criar uma vitrine de e.commerce.
     Aula3:
     Uso de dicionário completo com chamada de ação dentro do arquivo html.
     
+    Aula4:
+    Criação de um projeto CRUD com dados armazenados em arquivo/dicionário.
