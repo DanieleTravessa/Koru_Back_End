@@ -8,4 +8,7 @@ Objetivo final criar uma vitrine de e.commerce.
     Aula2:
     Demontração do uso de templantes com o Flask.
     Opção com o uso adicional do bootstrap.
+
+    Aula3:
+    Uso de dicionário completo com chamada de ação dentro do arquivo html.
     

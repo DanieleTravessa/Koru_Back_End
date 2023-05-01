@@ -84,3 +84,8 @@ produtos = {
     }
 }
 
+Comandos GIT
+
+git remote add origin https://github.com/DanieleTravessa/Koru_Back_End.git
+git branch -m main
+git push -u origin main
