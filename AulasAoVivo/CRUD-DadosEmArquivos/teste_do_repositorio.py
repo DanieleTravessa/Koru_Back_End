@@ -19,6 +19,7 @@ alterado = {
 }
 repositorio.atualizar_produto(2, alterado )
 
+
 #Teste a função criar_produto(nome, descricao, preco, imagem), que recebe um nome, uma descricao, um preco e uma imagem e adiciona o produto no dicionario de dicionario com um novo id
 repositorio.criar_produto(alterado)
 #opções aceitas na passagem de parâmetro:
@@ -27,3 +28,4 @@ repositorio.criar_produto(alterado)
 #repositorio.criar_produto("nome", "descricao", 0.0, "imagem.jpg")
 
 #Experimente a função gerar_id(), que retornar um novo id a partir dos ids já cadastrados no dicionário de dicionários
+print(repositorio.gerar_id)

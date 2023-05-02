@@ -13,4 +13,10 @@ Objetivo final criar uma vitrine de e.commerce.
     Uso de dicionário completo com chamada de ação dentro do arquivo html.
     
     Aula4:
-    Criação de um projeto CRUD com dados armazenados em arquivo/dicionário.
+    Criação de um projeto CRUD com dados armazenados em arquivo/dicionário. 
+    (Dicionário e Flask)
+
+    Aula5:
+    Criação de um projeto CRUD com dados armazenados em um banco de dados.
+    
+
